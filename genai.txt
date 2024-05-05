@@ -1,0 +1,99 @@
+In this project I am going to show you how you can use the Gemini AI API
+in a website made using django. Let's get into it.
+I am coding on windows, but the process is not really that much different
+from linux but I will show you how to do so for linux also. Are you ready? Let's
+get into it. Code along with me.
+
+Create a project folder and cd into it
+
+Install requirements
+pip install django
+
+
+Start the project
+django-admin startproject generative_ai
+cd into the project
+
+Create the app
+python manage.py genai
+
+Check if the project was installed properly
+python manage.py runserver
+go to the address: 127.0.0.1:800 on your browser.
+If installation worked shutdown the server by clicking ctrl+C
+
+
+Go to settings.py and add the app we just created.
+In the app folder we are going to create a # urls.py file:
+Add a few lines of code:
+
+Now inside urls.py that are in the same folder as settings.py
+add the following lines to connect the app with project urls.
+
+The next step is to create a template folder and a static
+folder inside my app.
+Inside the template folder Let's create a html page
+Inside the static page we'll create a css file for the styles.
+
+
+In the views.py, lets create a view function and display our
+html file.
+
+In the urls.py, we are going to create a path that accesses
+our index view.
+
+Now let's connect our styles.
+
+Let's create a simple html page, where a user can ask
+gemini a question and then we can show the response.
+
+I'm gonna use bootstrap for this:
+https://getbootstrap.com/docs/4.1/getting-started/introduction/
+
+Copy and paste the cdn links into the html.
+
+For the form and button I'll use this ones.
+
+Our html is complete so now we add our api.
+We don't need models because we are not storing any data, we 
+are just fetching responses from gemini api.
+
+First we install google-generativeai
+pip install -q -U google-generativeai
+
+Get a gemini api key.
+Google - gemini ai api
+Login with your google account
+Create an API
+
+
+Now back to the views.py
+We are going to intergrate gemini api into the views.
+We can do it in a seperate python file, but this video is for 
+the simplest way to get started, if you are interested in 
+the more production level way, let me know in the comments.
+
+import gemini ai dependencies
+# For security purposes ensure you store your api key
+in a secure file, don't use it directly in the code.
+
+Lets access user input from the html input
+
+return the response in the context.
+
+And we are done.
+
+For fun let's make it appear like it is generating
+the text like it does in chatgpt and gemini.
+For that, let's add a small scripts at the end of the htm
+file.
+
+Let's make it even better by cleaning the data a bit more
+so that it has fewer unwanted characters.
+Install markdown
+pip install markdown
+
+In the views.py get the response to markdown to be processed before 
+outputing it.
+
+
