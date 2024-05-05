@@ -2,8 +2,8 @@ import textwrap
 import markdown
 import google.generativeai as genai
 
-
-GEM_API_KEY = 'AIzaSyAduQFWwCkWciqw9HTqNhg-pW9PQqUnSjc'
+#Keep it secret
+GEM_API_KEY = API_KEY_HERE
 
 user_input = input("Ask: ")
 
