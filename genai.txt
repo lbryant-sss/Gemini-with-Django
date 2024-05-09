@@ -19,7 +19,7 @@ python manage.py genai
 
 Check if the project was installed properly
 python manage.py runserver
-go to the address: 127.0.0.1:800 on your browser.
+go to the address: 127.0.0.1:8000 on your browser.
 If installation worked shutdown the server by clicking ctrl+C
 
 
